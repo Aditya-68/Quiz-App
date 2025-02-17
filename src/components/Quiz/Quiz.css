@@ -1,0 +1,99 @@
+/* Prevent body from scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full height of the viewport */
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevent page scrolling */
+}
+
+/* Main quiz container */
+.container {
+    width: 600px; /* Slightly reduced width */
+    max-height: 80vh; /* Prevents overflowing */
+    overflow-y: auto; /* Enables scrolling inside the quiz if needed */
+    margin: auto;
+    background: white;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap */
+    border-radius: 10px;
+    padding: 30px 40px; /* Reduced padding */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Line under the heading */
+.container hr {
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+
+/* Question text */
+.container h2 {
+    font-size: 22px; /* Reduced font size */
+    font-weight: 500;
+}
+
+/* Answer options */
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    height: 60px; /* Reduced height */
+    padding-left: 12px; /* Slightly reduced padding */
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 18px; /* Reduced font size */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container ul li:hover {
+    background-color: #f4f4f4;
+}
+
+/* Next Button */
+.container button {
+    margin: auto;
+    width: 220px; /* Slightly smaller button */
+    height: 55px;
+    color: #ffff;
+    background: #553f9a;
+    font-size: 22px; /* Reduced font size */
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container button:hover {
+    background: #412b85;
+}
+
+/* Question index */
+.container .index {
+    margin: auto;
+    font-size: 16px; /* Reduced font size */
+}
+
+/* Correct answer */
+.container .correct {
+    background: #dffff2 !important;
+    border-color: #00d397 !important;
+}
+
+/* Wrong answer */
+.container .wrong {
+    background: #ffebeb !important;
+    border-color: #ff4a4a !important;
+}
